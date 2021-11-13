@@ -1,0 +1,10 @@
+{
+  "correntistas": [
+    {
+      "id": 1,
+      "name": "Amanda",
+      "cpf": "111111111111",
+      "accountNumber": 22
+    }
+  ]
+}

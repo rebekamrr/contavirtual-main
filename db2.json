@@ -1,0 +1,9 @@
+{
+  "contas": [
+    {
+      "id": 1,
+      "accountHolder": 1,
+      "saldo": 1000
+    }
+  ]
+}

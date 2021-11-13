@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color: #010334;
+  color: white;
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-up, .button-menu{
+  color: white;
+}
+.title-data{
+  margin-top: 4vw;
+  margin-left: 30vw;
+
+}
+.form-style{
+ // background-color: #010334;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  max-width: 100vh;
+  color: black;
+
+}
+
+.container-form-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  height: 50vh;
+  //margin: auto;
+  margin-left: 8px;
+
+}
+.container-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50vh;
+
+}
+
+.button-save{
+  margin-left: 70%;
+}
+
+
+/*Sidenav*/
+.example-sidenav-content {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+element.style {
+  width: 4em;
+  transform: translate3d(0px, 0px, 0px);
+  visibility: visible;
+}
+.example-sidenav {
+  background-color: #010334;
+}
+.active {
+  background-color: rgba(9, 30, 66, 0.25);
+}
+
+.sidenav-item {
+  color: white;
+  font-size: 20px;
+}
+
+mat-icon {
+  color: white;
+}
+

@@ -1,0 +1,85 @@
+<div class="menu-up">
+  <mat-list class="menu">
+    <mat-sidenav-container fullscreen>
+      <mat-sidenav
+        #sidenav
+        mode="side"
+        class="example-sidenav"
+        [ngStyle]="{ 'width.em': sidenavWidth }"
+        opened="true"
+        (mouseenter)="increase()"
+        (mouseleave)="decrease()"
+      >
+        <mat-nav-list>
+          <mat-list-item routerLink="1" routerLinkActive="active">
+            <mat-icon mat-list-icon>manage_accounts</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+              <h5>Perfil</h5>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="2" routerLinkActive="active">
+            <mat-icon mat-list-icon>attach_money</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+              <h5>Configurar Conta</h5>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="2" routerLinkActive="active">
+            <mat-icon mat-list-icon>payment</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+              <h5>Cartão</h5>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="3" routerLinkActive="active">
+            <mat-icon mat-list-icon>lock</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+              <h5>Segurança</h5>
+            </div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="3" routerLinkActive="active">
+            <mat-icon mat-list-icon>device_unknown</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+              <h5>Ajuda</h5>
+            </div>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-sidenav>
+    </mat-sidenav-container>
+
+
+  <button mat-icon-button><mat-icon>home</mat-icon></button>
+    <button mat-icon-button><mat-icon>person</mat-icon></button>
+  </mat-list>
+</div>
+
+
+
+<div>
+  <mat-tab-group mat-align-tabs="center">
+
+
+    <mat-tab label="Meus Dados">
+        <app-account-holder></app-account-holder>
+    </mat-tab>
+
+    <mat-tab label="Depositar">
+        <app-account-deposit></app-account-deposit>
+    </mat-tab>
+
+    <mat-tab label="Saque">
+        <app-account-withdrawal></app-account-withdrawal>
+    </mat-tab>
+
+    <mat-tab label="Transferência">
+        <app-account-transactions></app-account-transactions>
+    </mat-tab>
+  </mat-tab-group>
+</div>
